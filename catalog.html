@@ -1,0 +1,115 @@
+ <!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">    
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic&subset=cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+<!-- Шапка сайта -->
+    <header class="catalog-page">
+      <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="Логотип" width="139" height="56"></a>
+      </div>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="">Студия</a></li>
+          <li><a href="">Клиенты</a></li>
+          <li><span>Магазин</span></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="user-block">
+      <a href="#" class="basket">Корзина</a>
+      </div>
+      <div class="title">
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+    </header>
+<!--  Основная часть  -->
+    <main>
+      <aside class="filters-list">
+        <form class="filters" action="" method="get" oninput="min.value=price.value" oninput="max.value=price.value">
+          <fieldset class="filters-price">
+            <legend>Стоимость:</legend>
+            <input class="slider-range" type="range" name="price-range" min="0" max="20000" step="100">
+            <label>ОТ <output name="min" >0</output></label>
+            <label>ДО <output name="max" >15000</output></label>
+          </fieldset>
+          <fieldset class="filters-grids">
+            <legend>Сетка:</legend>
+            <label><input type="radio" checked> Адаптивная</label>
+            <label><input type="radio"> Фиксированная</label>
+            <label><input type="radio"> Резиновая</label>
+          </fieldset>
+          <fieldset class="filters-features">
+            <legend>Особенности:</legend>
+            <label><input type="checkbox" checked> Слайдер</label>
+            <label><input type="checkbox"> Блок преимуществ</label>
+            <label><input type="checkbox"  checked> Новости</label>
+            <label><input type="checkbox"> Галерея</label>
+            <label><input type="checkbox"> Корзина</label>
+          </fieldset>
+          <button>Показать</button>
+        </form>
+      </aside>
+<!--   каталог макетов   -->
+      <section class="maquette-preview">
+        <div class="sort">
+          <span>Сортировать:</span>
+          <button class="sort-price">по цене</button>
+          <button class="sort-type">по типу</button>
+          <button class="sort-functional">по функционалу</button>
+          <button class="sort-down">по убыванию</button>
+          <button class="sort-up">по возрастанию</button>
+        </div>
+        <div class="maquette-item"></div>
+        <div class="maquette-item"></div>
+        <div class="maquette-item"></div>
+        <div class="maquette-item"></div>
+        <div class="maquette-item"></div>
+        <div class="maquette-item"></div>
+      </section>
+      
+      <div class="page-number">
+          <ul>
+            <li><span>1</span></li>
+            <li><a class="page2" href="#">2</a></li>
+            <li><a class="page3" href="#">3</a></li>
+            <li><a class="next" href="#">Следующая</a></li>
+          </ul>
+        </div>
+<!--  Блок карты  -->
+      <section class="card-place">
+        <div>
+          <img class="card" src="img/card.png" alt="Карта с расположением магазина" width="1200" height="416">
+          <img class="card-marker" src="img/marker.png" width="231" height="190">
+          <img class="card-marker-logo" src="img/logo.png" width="92" height="37">
+          <div class="card-contacts">
+            <h3>N&#1025;RDS DESIGN STUDIO</h3>
+            <p>Санкт-Петербург, ул. Большая Конюшенная, д. 19/8</p>
+            <p>8 812 450-25-25</p>
+            <a class="card-btn" href="#">Напишите нам</a>
+          </div>
+        </div>
+      </section>
+    </main>
+<!--  Подвал  -->
+    <footer>
+      <div class="social-btn">
+        <a class="social social-vk" href="#"><img src="/img/" alt="Вконтакте" width="" height=""></a>
+        <a class="social social-fb" href="#"><img src="/img/" alt="Фейсбук" width="" height=""></a>
+        <a class="social social-inst" href="#"><img src="/img/" alt="Инстаграмм" width="" height=""></a>
+      </div>
+      <p>
+        <span>Давайте дружить, это выгодно!</span>
+        Скидка 10% для друзей из социальных сетей.
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
